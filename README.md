@@ -2,15 +2,17 @@
 ## Tarea:  Ejecucion y comprension de procesos en linux
 ## Alumno: Romén Gilberto García Gómez
 
-### BLOQUE 1: COnceptos basicos (Teoria)
-#### 1. Define que es un proceso yen que se diferencia de un programa.
+En el siguiente archivo se han omitido los acentos para facilitar traducciones.
+
+### BLOQUE 1: Conceptos basicos (Teoria)
+#### 1. Define que es un proceso y en que se diferencia de un programa.
 ```
-RESPUESTA
+Un proceso es un programa en ejecucion con recursos asignados. El programa es un codigo estatico y el proceso es su propia ejecucion activa.
 ```
 
 #### 2. Explica qué es el kernel y su papel en la gestión de procesos.
 ```
-RESPUESTA
+El kernel es el nucleo del sistema operativo, gestiona procesos y coordina el enlace entre hardware y software
 ```
 
 #### 3. ¿Qué son PID y PPID? Explica con un ejemplo.
