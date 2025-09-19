@@ -184,3 +184,88 @@ Explicacion:
 ```
 Se suspende y se renauda el proceso
 ```
+
+#### 25. Lanza un proceso en segundo plano con & y observalo con jobs.
+Comando:
+```
+firefox &
+```
+Output:
+```
+[2] 25166
+[1]   Salida 127              prueba
+```
+Comando para visualizar el proceso:
+```
+jobs
+```
+Salida:
+```
+[3]+  Hecho                   firefox
+```
+
+#### 26. Explica la diferencia entre los estados de un proceso: Running, Sleeping, Zombie, Stopped
+Respuesta:
+```
+RUNNING: Se esta ejecutando en la CPU y esta atcivo.
+SLEEPING: No se esta ejecutando directamente, pero esta esperando a que suceda algo o que se
+libere espacio para despertar.
+ZOMBIE: El proceso ha terminado su ejecucion pero su padre no lo ha leido, por lo que sigue
+saliendo en la tabla de procesos.
+STOPPED: El proceso esta cerrado y finalizado.
+```
+
+#### 27. Usa ps -eo pid,ppid,stat,cmd para mostrar los estados de varios procesos.
+Comando:
+```
+ps -eo pid,ppid,stat,cmd
+```
+Output:
+```
+Listado de procesos
+```
+
+#### 28. Ejecuta watch -n 1 ps -3 y observa como cambian los procesos en tiempo real.
+Comando:
+```
+watch -n 1 ps -3
+```
+
+#### 29. Explica la diferencia entre ejecutar un proceso con & y con nohup.
+Respuesta:
+```
+Al ejecutar un comando con & se ejecuta en segundo plano y se queda ligado a la sesion actua,
+por lo que si cierras la terminal se cerrara el proceso. Y con nohup se hará en primer plano
+y ligado al sistema, por lo que si cerramos sesion podra seguir ejecutandose
+```
+
+#### 30. Usa ulimit -a para ver los limites de recursos de procesos en tu sistema.
+Comando:
+```
+ulimit -a
+```
+Output:
+```
+real-time non-blocking time  (microseconds, -R) unlimited
+core file size              (blocks, -c) 0
+data seg size               (kbytes, -d) unlimited
+scheduling priority                 (-e) 0
+file size                   (blocks, -f) unlimited
+pending signals                     (-i) 125413
+max locked memory           (kbytes, -l) 4026308
+max memory size             (kbytes, -m) unlimited
+open files                          (-n) 1024
+pipe size                (512 bytes, -p) 8
+POSIX message queues         (bytes, -q) 819200
+real-time priority                  (-r) 0
+stack size                  (kbytes, -s) 8192
+cpu time                   (seconds, -t) unlimited
+max user processes                  (-u) 125413
+virtual memory              (kbytes, -v) unlimited
+file locks                          (-x) unlimited
+```
+Explicacion:
+```
+Vemos los limites de los procesos del sistema, algunos tienen su limite marcado, otros estan marcados
+como ilimitados.
+```
