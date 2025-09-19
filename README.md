@@ -9,12 +9,14 @@ En el siguiente archivo se han omitido los acentos para facilitar traducciones.
 ```
 Un proceso es un programa en ejecucion con recursos asignados. El programa es
 un codigo estatico y el proceso es su propia ejecucion activa.
+Fuente: GeeksforGeeks
 ```
 
 #### 2. Explica qué es el kernel y su papel en la gestión de procesos.
 ```
 El kernel es el nucleo del sistema operativo, gestiona procesos y coordina el
 enlace entre hardware y software.
+Fuente: LearnLinux.org.za
 ```
 
 #### 3. ¿Qué son PID y PPID? Explica con un ejemplo.
@@ -23,28 +25,33 @@ PID: Procces ID: identificador unico de un proceso.
 PPID: Parent Proccess ID: identificador del proceso padre de un proceso hijo.
 EJEMPLO: Si ejecutas bash (PID 100) y con el lanzas python (PID 120), entonces el PPID de
 python será 100.
+Fuente: StackOverflow
 ```
 
 #### 4. Describe qué es un cambio de contexto y por qué es costoso.
 ```
 Un cambio de contexto es cuando la CPU guarda el estado de un proceso en un punto actual, y
 luego se ejecuta otro. Esto puede resultar costoso porque implica tener que guardar y restaurar
-registros. 
+registros.
+Fuente: Delightly Linux
 ```
 
 #### 5. Explica qué es un PCB (Process Control Block) y qué información almacena.
 ```
 Es la estructura de datos donde el SO guarda informacion del estado de un proceso.
+Fuente: Delightly Linux
 ```
 
 #### 6. Diferencia entre proceso padre y proceso hijo.
 ```
 El proceso padre crea al proceso hijo, el cual hereda parte de los recursos del padre.
+Fuente: GeeksforGeeks
 ```
 
 #### 7. Explica qué ocurre cuando un proceso queda huérfano en Linux.
 ```
 Pasa a ser "adoptado" por el proceso 'init', el cual lo gestiona ahora.
+Fuente: El documento de Pearson Higher Education
 ```
 
 #### 8. ¿Qué es un proceso zombie? Da un ejemplo de cómo puede ocurrir.
@@ -52,12 +59,14 @@ Pasa a ser "adoptado" por el proceso 'init', el cual lo gestiona ahora.
 Es un proceso hijo que ya finalizo, pero su padre no ha leido que ha terminado, asi que
 sigue en la lista de procesos.
 EJEMPLO: Un hijo finaliza, pero el padre no ejecuta wait(), asi que queda como zombi
+Fuente: Wikipedia
 ```
 
 #### 9. Diferencia entre concurrencia y paralelismo.
 ```
 CONCURRENCIA: Ejecutar varios procesos por turnos, usando un solo procesador.
 PARALELISMO: Ejecutarlos al mismo tiempo usando varios procesadores.
+Fuente: GeeksforGeeks
 ```
 
 #### 10. Explica qué es un hilo (thread) y en qué se diferencia de un proceso.
@@ -65,6 +74,7 @@ PARALELISMO: Ejecutarlos al mismo tiempo usando varios procesadores.
 Es la unidad basica de ejecucion de un proceso.
 Su diferencia con un proceso es que comparte memoria y recursos con el resto de hilos del
 mismo proceso, en cambio, los procesos son independientes.
+Fuente: Wikipedia
 ```
 
 
