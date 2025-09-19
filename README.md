@@ -51,7 +51,7 @@ Fuente: GeeksforGeeks
 #### 7. Explica qué ocurre cuando un proceso queda huérfano en Linux.
 ```
 Pasa a ser "adoptado" por el proceso 'init', el cual lo gestiona ahora.
-Fuente: El documento de Pearson Higher Education
+Fuente: Wikipedia
 ```
 
 #### 8. ¿Qué es un proceso zombie? Da un ejemplo de cómo puede ocurrir.
