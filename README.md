@@ -56,12 +56,15 @@ EJEMPLO: Un hijo finaliza, pero el padre no ejecuta wait(), asi que queda como z
 
 #### 9. Diferencia entre concurrencia y paralelismo.
 ```
-RESPUESTA
+CONCURRENCIA: Ejecutar varios procesos por turnos, usando un solo procesador.
+PARALELISMO: Ejecutarlos al mismo tiempo usando varios procesadores.
 ```
 
 #### 10. Explica qué es un hilo (thread) y en qué se diferencia de un proceso.
 ```
-RESPUESTA
+Es la unidad basica de ejecucion de un proceso.
+Su diferencia con un proceso es que comparte memoria y recursos con el resto de hilos del
+mismo proceso, en cambio, los procesos son independientes.
 ```
 
 
