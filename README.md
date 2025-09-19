@@ -7,42 +7,51 @@ En el siguiente archivo se han omitido los acentos para facilitar traducciones.
 ### BLOQUE 1: Conceptos basicos (Teoria)
 #### 1. Define que es un proceso y en que se diferencia de un programa.
 ```
-Un proceso es un programa en ejecucion con recursos asignados. El programa es un codigo estatico y el proceso es su propia ejecucion activa.
+Un proceso es un programa en ejecucion con recursos asignados. El programa es
+un codigo estatico y el proceso es su propia ejecucion activa.
 ```
 
 #### 2. Explica qué es el kernel y su papel en la gestión de procesos.
 ```
-El kernel es el nucleo del sistema operativo, gestiona procesos y coordina el enlace entre hardware y software
+El kernel es el nucleo del sistema operativo, gestiona procesos y coordina el
+enlace entre hardware y software.
 ```
 
 #### 3. ¿Qué son PID y PPID? Explica con un ejemplo.
 ```
-RESPUESTA
+PID: Procces ID: identificador unico de un proceso.
+PPID: Parent Proccess ID: identificador del proceso padre de un proceso hijo.
+EJEMPLO: Si ejecutas bash (PID 100) y con el lanzas python (PID 120), entonces el PPID de
+python será 100.
 ```
 
 #### 4. Describe qué es un cambio de contexto y por qué es costoso.
 ```
-RESPUESTA
+Un cambio de contexto es cuando la CPU guarda el estado de un proceso en un punto actual, y
+luego se ejecuta otro. Esto puede resultar costoso porque implica tener que guardar y restaurar
+registros. 
 ```
 
 #### 5. Explica qué es un PCB (Process Control Block) y qué información almacena.
 ```
-RESPUESTA
+Es la estructura de datos donde el SO guarda informacion del estado de un proceso.
 ```
 
 #### 6. Diferencia entre proceso padre y proceso hijo.
 ```
-RESPUESTA
+El proceso padre crea al proceso hijo, el cual hereda parte de los recursos del padre.
 ```
 
 #### 7. Explica qué ocurre cuando un proceso queda huérfano en Linux.
 ```
-RESPUESTA
+Pasa a ser "adoptado" por el proceso 'init', el cual lo gestiona ahora.
 ```
 
 #### 8. ¿Qué es un proceso zombie? Da un ejemplo de cómo puede ocurrir.
 ```
-RESPUESTA
+Es un proceso hijo que ya finalizo, pero su padre no ha leido que ha terminado, asi que
+sigue en la lista de procesos.
+EJEMPLO: Un hijo finaliza, pero el padre no ejecuta wait(), asi que queda como zombi
 ```
 
 #### 9. Diferencia entre concurrencia y paralelismo.
